@@ -3,10 +3,10 @@ Disciplina: Linguagens Formais e Autômatos – 2025-1
 Instituição: [Nome da Instituição, se necessário]
 
 Autores:
-- Felipe Ujvari Gasparino de Sousa – 10418415
-- Gustavo Nascimento Siqueira – 1041XXXX
-- Thomaz – 1041XXXX
-- Vinicius – 1041XXXX
+- Felipe Ujvari Gasparino de Sousa - 10418415
+- Gustavo Nascimento Siqueira - 10419057
+- Thomaz de Souza Scopel - 10417183
+- Vinicius Cappatti - 10418266
 
 ------------------------------------------------------------
 📌 Objetivo do Projeto:
@@ -47,41 +47,40 @@ A gramática considerada no analisador segue o seguinte formato:
 ------------------------------------------------------------
 Cada linha deve conter **uma expressão numérica**.
 
-Exemplo de conteúdo:
+Exemplo de testes:
 
-    -(4+3)*5
-    5+6*2
-    (1+2)*(3-4)/5
-    9
-    -8+4
-    (2+(3*4))/5
-    ((7))
-    3+*4     ← inválida
-    5+       ← inválida
-    -)       ← inválida
+    -(4+3)*5$       ← inválida pois a gramática não aceita que se tenha um '-' seguido de '('
+    5+6*2$
+    5+6*2           ← inválida
+    (1+2)*(3-4)/5$
+    9$
+    -8+4$
+    (2+(3*4))/5$
+    ((7))$
+    3+*4$           ← inválida
+    5+$             ← inválida
+    -)$             ← inválida
 
 ------------------------------------------------------------
 🧪 Saída Esperada:
 ------------------------------------------------------------
-Para cada linha do arquivo `entrada.txt`, o programa exibirá:
+O arquivo lê a palavra contida no arquivo `entrada.txt` e retorna
 
-- A expressão sendo analisada
-- Se é válida ✅ ou inválida ❌ com a posição do erro
+```
+Palavra <palavra_de_entrada> reconhecida com sucesso!
+```
 
-Exemplo:
+em caso de palavra aceita ou
 
-    ➡️  Analisando: -(4+3)*5
-      ✅ Expressão válida!
+```
+ERRO DE SINTAXE na posicao <posicao_do_erro>. Caractere inesperado: <caractere_causador_do_erro>
+```
 
-    ➡️  Analisando: 3+*4
-      ❌ Erro: Esperado número, parêntese ou sinal negativo na posição 3 (caractere '*')
-
+em caso de uma entrada que não seja aceita pela gramática.
 ------------------------------------------------------------
 📌 Observações Finais:
 ------------------------------------------------------------
 - O projeto respeita os nomes dos não-terminais da gramática.
 - O código foi testado com múltiplas expressões válidas e inválidas.
 - O analisador lida com precedência de operadores e parênteses corretamente.
-
 ------------------------------------------------------------
-
