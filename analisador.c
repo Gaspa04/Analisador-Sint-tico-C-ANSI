@@ -5,7 +5,7 @@
         - Felipe Ujvari Gasparino de Sousa - 10418415
         - Gustavo Nascimento Siqueira - 10419057
         - Thomaz de Souza Scopel - 10417183
-        - Vinicius Cappatti - 10418266
+        - Vinicius Sanches Cappatti - 10418266
           
 */
 
