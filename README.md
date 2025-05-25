@@ -1,6 +1,6 @@
 Projeto 2 – Analisador Sintático Recursivo Descendente  
 Disciplina: Linguagens Formais e Autômatos – 2025-1  
-Instituição: [Nome da Instituição, se necessário]
+Instituição: Mackenzie
 
 Autores:
 - Felipe Ujvari Gasparino de Sousa - 10418415
